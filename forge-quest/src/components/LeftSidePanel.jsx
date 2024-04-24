@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { AppBar, Toolbar, Box, Button, Link, Typography } from '@mui/material';
+import { Box, Button, Link, Typography } from '@mui/material';
 
 import { Divider, Stack } from "@mui/material";
 
@@ -45,7 +45,7 @@ const btnStyle = {
 
 export default function LeftSidePanel() {
     return (
-        <div className='side-bar' style={{ width: '280px', backgroundColor: 'rgb(16, 20, 24)' }}>
+        <div className='side-bar' style={{ minWidth: '250px', position: 'fixed', backgroundColor: 'rgb(16, 20, 24)', borderRight: '1px solid rgb(31, 37, 42)'}}>
             <Stack>
                 <Box sx={{ display: 'flex', alignItems: 'center', height: '70px', justifyContent: 'center' }}>
                     <Link href="#" style={textStyle} sx={{ textDecoration: 'none', fontSize: 40 }}>

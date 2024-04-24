@@ -61,3 +61,19 @@ html {
   height: 100vh;
   scrollbar-width: thin; /* Тонкий пользовательский скроллбар (только для браузеров, поддерживающих свойство scrollbar-width) */
 }
+
+.main-box {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.main-line {
+  background-color: rgb(31, 37, 42);
+  width: 1000px;
+  height: 1px;
+  padding-left: 350px;
+  margin: auto;
+  margin-left: calc(20px + auto);
+
+
+}

@@ -3,13 +3,8 @@ import React from 'react';
 import { AppBar, Toolbar, Box, Link } from '@mui/material';
 import Paper from '@mui/material/Paper';
 import InputBase from '@mui/material/InputBase';
-import Divider from '@mui/material/Divider';
 import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
-import DirectionsIcon from '@mui/icons-material/Directions';
-
-import ListIcon from '@mui/icons-material/List';
 
 const textStyle = {
     color: 'white',
@@ -24,13 +19,13 @@ export default function NavBar() {
     };
 
     return (
-        <AppBar position="static" sx={{ backgroundColor: 'rgb(16,20,24)' }}
+        <AppBar position="static" sx={{ backgroundColor: 'rgb(16,20,24)', paddingLeft: '250px' }}
             style={{ height: 70, justifyContent: 'center' }}>
-            <Toolbar sx={{ display: 'flex', textAlign: 'center', justifyContent: 'space-between' }} style={{ paddingLeft: 36, paddingRight: 36 }}>
+            <Toolbar sx={{ display: 'flex', textAlign: 'center', gap: '50px', justifyContent: 'space-between' }} style={{ paddingLeft: 36, paddingRight: 36 }}>
                 <Box>
                     <Paper
                         component="form"
-                        sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', width: 400, backgroundColor: 'rgb(16,20,24)', border: '1px solid azure' }}
+                        sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', maxWidth: 400, backgroundColor: 'rgb(16,20,24)', border: '1px solid azure' }}
                     >
                         <InputBase
                             sx={{ ml: 2, flex: 1, color: 'azure' }}
@@ -42,6 +37,9 @@ export default function NavBar() {
                         </IconButton>
                     </Paper>
                 </Box>
+                <div style={{ fontSize: '20px', padding: '7px', border: '1px solid azure', borderRadius: 5 }}>
+                    Type <span style={{ color: 'green' }}> /site </span> in the server chat to get link to this page
+                </div>
                 <Box style={{ gap: 25 }} sx={{ display: 'flex', alignItems: 'center' }}>
                     <Box>
                         <Link href="#" style={textStyle} sx={{ textDecoration: 'none' }}>

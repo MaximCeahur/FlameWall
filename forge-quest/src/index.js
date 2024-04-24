@@ -5,22 +5,26 @@ import reportWebVitals from './reportWebVitals';
 import NavBar from './components/NavBar';
 import MainPage from './components/MainPage';
 import LeftSidePanel from './components/LeftSidePanel';
+import Description from './components/Description'
 
 import { Box, Stack } from "@mui/material";
+import { Divider } from "@mui/material";
+import zIndex from '@mui/material/styles/zIndex';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <>
-        <Stack direction="row" style={{justifyContent: 'space-between'}}>
+        <Stack direction="row" style={{ justifyContent: 'space-between' }}>
             <LeftSidePanel />
             <div className="vertical-divider"></div>
-            <Box style={{ width: '100%' }}>
+            <Box className="main-box" style={{ width: '100%' }}>
                 <NavBar />
                 <div className='line'></div>
                 <MainPage />
+                <Divider style={{ paddingLeft: '250px', margin: 'auto' }}></Divider>
+                <Description />
             </Box>
-
         </Stack>
     </>
 
