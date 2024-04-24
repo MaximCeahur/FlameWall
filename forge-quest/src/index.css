@@ -5,6 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(16, 20, 24);
+  max-width: 100%;
+  align-content: center;
+  margin: auto !important;
+
 }
 
 code {
@@ -12,16 +17,47 @@ code {
     monospace;
 }
 
-.navbar {
-  background-color: #498CC8;
-  height: 80px;
-  display: flex !important;
-  flex-direction: row;
-  justify-content: space-between !important;
-  align-items: center !important;
+/* Для WebKit-браузеров (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 12px; /* Ширина полосы прокрутки */
 }
 
-.navbar-logo {
-  font-family: 'Pavelt, sans-serif' !important;
-  font-size: 30px !important;
+::-webkit-scrollbar-track {
+  background-color: #333; /* Цвет фона полосы прокрутки */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #666; /* Цвет ползунка */
+  border-radius: 6px; /* Скругление углов ползунка */
+}
+
+/* Для Firefox */
+/* Эти стили также могут быть применены для изменения внешнего вида скроллбара в Firefox */
+/* Однако, в Firefox необходимо установить аддон для включения пользовательских скроллбаров */
+
+/* Изменение цвета фона полосы прокрутки в Firefox */
+html {
+  scrollbar-color: #666 #333;
+}
+
+
+
+.line {
+  max-width: 100%;
+  height: 1px;
+  background-color: rgb(31, 37, 42);
+  margin: auto;
+}
+
+.vertical-divider {
+  width: 0.5px;
+  background-color: rgb(31, 37, 42);
+  margin: 0;
+}
+
+.side-bar {
+  overflow-y: auto; /* Включаем вертикальную прокрутку */
+  overflow-x: hidden; /* Скрываем горизонтальную прокрутку */
+  height: 100vh;
+  scrollbar-width: thin; /* Тонкий пользовательский скроллбар (только для браузеров, поддерживающих свойство scrollbar-width) */
 }
