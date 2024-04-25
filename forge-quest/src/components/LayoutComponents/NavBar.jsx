@@ -11,13 +11,6 @@ const textStyle = {
 };
 
 export default function NavBar() {
-
-    const [drawerOpen, setDrawerOpen] = React.useState(false);
-
-    const toggleDrawer = () => {
-        setDrawerOpen(!drawerOpen);
-    };
-
     return (
         <AppBar position="static" sx={{ backgroundColor: 'rgb(16,20,24)', paddingLeft: '250px' }}
             style={{ height: 70, justifyContent: 'center' }}>
@@ -37,7 +30,7 @@ export default function NavBar() {
                         </IconButton>
                     </Paper>
                 </Box>
-                <div style={{ fontSize: '20px', padding: '7px', border: '1px solid azure', borderRadius: 5 }}>
+                <div style={{ fontSize: '15px', padding: '10px', border: '1px solid azure', borderRadius: 5 }}>
                     Type <span style={{ color: 'green' }}> /site </span> in the server chat to get link to this page
                 </div>
                 <Box style={{ gap: 25 }} sx={{ display: 'flex', alignItems: 'center' }}>

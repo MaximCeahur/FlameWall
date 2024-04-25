@@ -1,6 +1,6 @@
 import React from "react";
 import { Stack } from "@mui/material";
-import CrownPeak from './img/maxresdefault.png';
+import CrownPeak from '../img/maxresdefault.png';
 
 
 
