@@ -3,12 +3,12 @@ import { Stack } from "@mui/material";
 import CheckIcon from '@mui/icons-material/Check';
 import AddIcon from '@mui/icons-material/Add';
 
-export default function GoldPrivilege() {
+export default function DiamondPrivilege() {
     return (
         <>
             <Stack direction={"column"} sx={{ maxWidth: 1200, margin: "auto", paddingLeft: '250px' }}>
                 <p style={{ fontFamily: '"Jersey 10", sans serif', fontSize: 80, margin: 0, marginTop: 25, marginBottom: 20, color: "azure", textAlign: "center" }}>
-                    Gold plan priviliges:
+                    Diamond plan priviliges:
                 </p>
                 <Stack direction={"row"} style={{ width: '1000px', margin: 'auto', alignItems: 'center', gap: '20px', marginBottom: '20px' }}>
                     <CheckIcon color="success"></CheckIcon>
@@ -19,7 +19,7 @@ export default function GoldPrivilege() {
                 <Stack direction={"row"} style={{ width: '1000px', margin: 'auto', alignItems: 'center', gap: '20px', marginBottom: '20px' }}>
                     <CheckIcon color="success"></CheckIcon>
                     <span style={{ fontFamily: '"Jersey 10", sans serif', fontSize: 30, margin: 0, color: "azure" }}>
-                        Possibility to vote for difficulty of the game and for changing the map
+                        Possibility to vote for changing the map
                     </span>
                 </Stack>
                 <Stack direction={"row"} style={{ width: '1000px', margin: 'auto', alignItems: 'center', gap: '20px', marginBottom: '20px' }}>
@@ -31,7 +31,7 @@ export default function GoldPrivilege() {
                 <Stack direction={"row"} style={{ width: '1000px', margin: 'auto', alignItems: 'center', gap: '20px', marginBottom: '20px' }}>
                     <CheckIcon color="success"></CheckIcon>
                     <span style={{ fontFamily: '"Jersey 10", sans serif', fontSize: 30, margin: 0, color: "azure" }}>
-                        Possibility to wear epic, rare and common clothes and use standart and premium emotes/music kits
+                        Possibility to wear legendary, epic, rare and common clothes and use standart, premium and elite emotes/music kits
                     </span>
                 </Stack>
                 <Stack direction={"row"} style={{ width: '1000px', margin: 'auto', alignItems: 'center', gap: '20px', marginBottom: '20px' }}>
@@ -41,21 +41,45 @@ export default function GoldPrivilege() {
                     </span>
                 </Stack>
                 <Stack direction={"row"} style={{ width: '1000px', margin: 'auto', alignItems: 'center', gap: '20px', marginBottom: '20px' }}>
-                    <AddIcon color="primary"></AddIcon>
+                    <CheckIcon color="success"></CheckIcon>
                     <span style={{ fontFamily: '"Jersey 10", sans serif', fontSize: 30, margin: 0, color: "azure" }}>
                         Creating private lobbies for mini-games
                     </span>
                 </Stack>
                 <Stack direction={"row"} style={{ width: '1000px', margin: 'auto', alignItems: 'center', gap: '20px', marginBottom: '20px' }}>
-                    <AddIcon color="primary"></AddIcon>
+                    <CheckIcon color="success"></CheckIcon>
                     <span style={{ fontFamily: '"Jersey 10", sans serif', fontSize: 30, margin: 0, color: "azure" }}>
-                        Pets (from common to epic)
+                        Pets (from common to legendary)
+                    </span>
+                </Stack>
+                <Stack direction={"row"} style={{ width: '1000px', margin: 'auto', alignItems: 'center', gap: '20px', marginBottom: '20px' }}>
+                    <CheckIcon color="success"></CheckIcon>
+                    <span style={{ fontFamily: '"Jersey 10", sans serif', fontSize: 30, margin: 0, color: "azure" }}>
+                        You can give 10 different people 1000 free XP in the same match with you
                     </span>
                 </Stack>
                 <Stack direction={"row"} style={{ width: '1000px', margin: 'auto', alignItems: 'center', gap: '20px', marginBottom: '20px' }}>
                     <AddIcon color="primary"></AddIcon>
                     <span style={{ fontFamily: '"Jersey 10", sans serif', fontSize: 30, margin: 0, color: "azure" }}>
-                        You can give 5 different people 1000 free XP in the same match with you
+                        Ability to immediately change the mini-game difficulty before start
+                    </span>
+                </Stack>
+                <Stack direction={"row"} style={{ width: '1000px', margin: 'auto', alignItems: 'center', gap: '20px', marginBottom: '20px' }}>
+                <AddIcon color="primary"></AddIcon>
+                    <span style={{ fontFamily: '"Jersey 10", sans serif', fontSize: 30, margin: 0, color: "azure" }}>
+                        You can make your own role name in the settings instead of [DIAMOND] 
+                    </span>
+                </Stack>
+                <Stack direction={"row"} style={{ width: '1000px', margin: 'auto', alignItems: 'center', gap: '20px', marginBottom: '20px' }}>
+                <AddIcon color="primary"></AddIcon>
+                    <span style={{ fontFamily: '"Jersey 10", sans serif', fontSize: 30, margin: 0, color: "azure" }}>
+                        Possibility to personally promote favourite buildings making them visible for our team
+                    </span>
+                </Stack>
+                <Stack direction={"row"} style={{ width: '1000px', margin: 'auto', alignItems: 'center', gap: '20px', marginBottom: '10px' }}>
+                <AddIcon color="primary"></AddIcon>
+                    <span style={{ fontFamily: '"Jersey 10", sans serif', fontSize: 30, margin: 0, color: "azure" }}>
+                        Custom capes (HD capes included)
                     </span>
                 </Stack>
             </Stack>

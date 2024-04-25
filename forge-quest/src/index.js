@@ -7,6 +7,7 @@ import Landing from './pages/Landing';
 import Pricings from './pages/Pricings';
 import Silver from './pages/Silver';
 import Gold from './pages/Gold';
+import Diamond from './pages/Diamond';
 
 ReactDOM.render(
     <Router>
@@ -15,6 +16,7 @@ ReactDOM.render(
         <Route path="/pricings" element={<Pricings />} />
         <Route path="/pricings/silver" element={<Silver />} />
         <Route path="/pricings/gold" element={<Gold />} />
+        <Route path="/pricings/diamond" element={<Diamond />} />
       </Routes>
     </Router>,
     document.getElementById('root')

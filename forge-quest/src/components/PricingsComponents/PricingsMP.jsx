@@ -71,7 +71,7 @@ export default function PricingsMP() {
                             <p style={{textAlign: 'center', color: 'azure', fontSize: '25px', margin: 0, marginTop: '10px'}}>
                                 $49/month
                             </p>
-                            <Button style={btnStyle}>
+                            <Button style={btnStyle} href="/pricings/diamond">
                                 Click here to see
                             </Button>
                             <img src={Diamond} style={{ padding: '15px' }}></img>
