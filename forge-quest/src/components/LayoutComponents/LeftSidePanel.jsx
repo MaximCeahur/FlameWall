@@ -16,6 +16,7 @@ import RuleIcon from '@mui/icons-material/Rule';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import SettingsIcon from '@mui/icons-material/Settings';
 import DiamondIcon from '@mui/icons-material/Diamond';
+import Logo from '../img/logo.png';
 
 const textStyle = {
     color: 'azure',
@@ -51,11 +52,12 @@ export default function LeftSidePanel() {
     return (
         <div className='side-bar' style={{ minWidth: '250px', position: 'fixed', backgroundColor: 'rgb(16, 20, 24)', borderRight: '1px solid rgb(31, 37, 42)'}}>
             <Stack>
-                <Box sx={{ display: 'flex', alignItems: 'center', height: '70px', justifyContent: 'center' }}>
-                    <Link href="/" style={textStyle} sx={{ textDecoration: 'none', fontSize: 40 }}>
+                <Stack direction={'row'} sx={{ display: 'flex', alignItems: 'center', height: '70px', justifyContent: 'center', gap: '15px' }}>
+                    <img src={Logo} style={{width: '48px', height: '35px' }}></img>
+                    <Link href="/" style={textStyle} sx={{ textDecoration: 'none', fontSize: 38 }}>
                         CrownPeak
                     </Link>
-                </Box>
+                </Stack>
                 <Divider style={{ borderColor: 'rgb(31, 37, 42)', marginBottom: '5px' }}></Divider>
                 <Typography style={{ fontSize: '27px', textAlign: 'left', marginTop: '10px', fontFamily: '"Jersey 10", sans serif', color: 'rgb(162,173,190)', marginLeft: '30px' }}>
                     Help

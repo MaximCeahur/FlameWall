@@ -2,7 +2,7 @@ import React from "react";
 import NavBar from "../components/LayoutComponents/NavBar";
 import LeftSidePanel from "../components/LayoutComponents/LeftSidePanel";
 import { Stack, Box } from "@mui/material";
-import GoldPrivilege from "../components/PricingsComponents/GoldPrivilege";
+import SilverPrivilege from "../components/PricingsComponents/SilverPrivilege";
 
 
 export default function Silver() {
@@ -13,7 +13,7 @@ export default function Silver() {
             <Box className="main-box" style={{ width: '100%' }}>
                 <NavBar />
                 <div className='line'></div>
-                <GoldPrivilege />
+                <SilverPrivilege />
             </Box>
         </Stack>
     )

@@ -84,7 +84,7 @@ export default function PricingsMP() {
                             <p style={{textAlign: 'center', color: 'azure', fontSize: '25px', margin: 0, marginTop: '10px'}}>
                                 $199/month
                             </p>
-                            <Button style={btnStyle}>
+                            <Button style={btnStyle} href="/pricings/bedrock">
                                 Click here to see
                             </Button>
                             <img src={Bedrock} style={{ width: '160px', padding: '15px' }}></img>
