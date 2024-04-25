@@ -1,7 +1,5 @@
 import React from "react";
 import { Button, Stack } from "@mui/material";
-import Popover from '@mui/material/Popover';
-import Typography from '@mui/material/Typography';
 import Silver from '../img/silver.webp';
 import Gold from '../img/gold.webp';
 import Diamond from '../img/diamond.webp';
@@ -33,12 +31,6 @@ const btnStyle = {
 }
 
 export default function PricingsMP() {
-
-    const [anchorEl, setAnchorEl] = React.useState(null);
-  
-    const open = Boolean(anchorEl);
-    const id = open ? 'simple-popover' : undefined;
-    
     return (
         <>
             <Stack direction={"column"} sx={{ maxWidth: 1200, margin: "auto", paddingLeft: '250px' }}>
@@ -54,7 +46,7 @@ export default function PricingsMP() {
                             <p style={{textAlign: 'center', color: 'azure', fontSize: '25px', margin: 0, marginTop: '10px'}}>
                                 $5/month
                             </p>
-                            <Button style={btnStyle}>
+                            <Button style={btnStyle} href="/pricings/silver">
                                 Click here to see
                             </Button>
                             <img src={Silver} style={{ padding: '15px' }}></img>
@@ -66,7 +58,7 @@ export default function PricingsMP() {
                             <p style={{textAlign: 'center', color: 'azure', fontSize: '25px', margin: 0, marginTop: '10px'}}>
                                 $19/month
                             </p>
-                            <Button style={btnStyle}>
+                            <Button style={btnStyle} href="/pricings/gold">
                                 Click here to see
                             </Button>
                             <img src={Gold} style={{ padding: '15px' }}></img>

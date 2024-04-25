@@ -2,11 +2,10 @@ import React from "react";
 import NavBar from "../components/LayoutComponents/NavBar";
 import LeftSidePanel from "../components/LayoutComponents/LeftSidePanel";
 import { Stack, Box } from "@mui/material";
-import PricingsMP from "../components/PricingsComponents/PricingsMP";
+import GoldPrivilege from "../components/PricingsComponents/GoldPrivilege";
 
 
-
-export default function Pricings() {
+export default function Silver() {
     return (
         <Stack direction="row" style={{ justifyContent: 'space-between' }}>
             <LeftSidePanel />
@@ -14,7 +13,7 @@ export default function Pricings() {
             <Box className="main-box" style={{ width: '100%' }}>
                 <NavBar />
                 <div className='line'></div>
-                <PricingsMP />
+                <GoldPrivilege />
             </Box>
         </Stack>
     )

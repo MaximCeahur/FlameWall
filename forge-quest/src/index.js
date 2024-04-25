@@ -5,12 +5,16 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Landing from './pages/Landing';
 import Pricings from './pages/Pricings';
+import Silver from './pages/Silver';
+import Gold from './pages/Gold';
 
 ReactDOM.render(
     <Router>
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/pricings" element={<Pricings />} />
+        <Route path="/pricings/silver" element={<Silver />} />
+        <Route path="/pricings/gold" element={<Gold />} />
       </Routes>
     </Router>,
     document.getElementById('root')
