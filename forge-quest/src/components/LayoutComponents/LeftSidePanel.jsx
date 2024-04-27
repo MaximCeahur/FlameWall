@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Box, Button, Link, Typography } from '@mui/material';
+import { Button, Link, Typography } from '@mui/material';
 
 import { Divider, Stack } from "@mui/material";
 
@@ -40,31 +40,33 @@ const stackStyle = {
 const btnStyle = {
     marginTop: '3px',
     marginBottom: '3px',
-    fontSize: 25,
-    fontWeight: 400,
+    fontSize: 30,
+    fontWeight: 100,
     color: 'rgb(162,173,190)',
     textTransform: 'none',
-    fontFamily: '"Jersey 10", sans serif',
-    height: '40px'
+    letterSpacing: '1px',
+    height: '40px',
+    fontFamily: '"Jersey 10", sans-serif',
+    WebkitTextStroke: '0.5px rgb(162,173,190)'
 }
 
 export default function LeftSidePanel() {
     return (
-        <div className='side-bar' style={{ minWidth: '250px', position: 'fixed', backgroundColor: 'rgb(16, 20, 24)', borderRight: '1px solid rgb(31, 37, 42)'}}>
+        <div className='side-bar' style={{ minWidth: '250px', position: 'fixed', backgroundColor: 'rgb(16, 20, 24)', borderRight: '1px solid rgb(31, 37, 42)' }}>
             <Stack>
-                <Stack direction={'row'} sx={{ display: 'flex', alignItems: 'center', height: '70px', justifyContent: 'center', gap: '15px' }}>
-                    <img src={Logo} style={{width: '48px', height: '35px' }}></img>
-                    <Link href="/" style={textStyle} sx={{ textDecoration: 'none', fontSize: 38 }}>
+                <Stack direction={'row'} sx={{ display: 'flex', alignItems: 'center', height: '70px', justifyContent: 'center', gap: '12px', WebkitTextStroke: '0.7px rgb(162,173,190)', letterSpacing: '2px' }}>
+                {/* <img src={Logo} style={{ width: '48px', height: '35px' }}></img> */}
+                    <Link href="/" style={textStyle} sx={{ textDecoration: 'none', fontSize: 43 }}>
                         CrownPeak
                     </Link>
                 </Stack>
                 <Divider style={{ borderColor: 'rgb(31, 37, 42)', marginBottom: '5px' }}></Divider>
-                <Typography style={{ fontSize: '27px', textAlign: 'left', marginTop: '10px', fontFamily: '"Jersey 10", sans serif', color: 'rgb(162,173,190)', marginLeft: '30px' }}>
+                <Typography style={{ WebkitTextStroke: '0.5px rgb(162,173,190)', letterSpacing: '2px', fontSize: '25px', textAlign: 'left', marginTop: '10px', fontFamily: '"Jersey 10", sans serif', color: 'rgb(162,173,190)', marginLeft: '30px' }}>
                     Help
                 </Typography>
                 <Stack direction={"row"} style={stackStyle}>
                     <PhoneIcon style={iconStyle} />
-                    <Button style={btnStyle}>Contacts</Button>
+                    <Button style={btnStyle} href='/contacts'>Contacts</Button>
                 </Stack>
                 <Stack direction={"row"} style={stackStyle}>
                     <SupportAgentIcon style={iconStyle} />
@@ -79,7 +81,7 @@ export default function LeftSidePanel() {
                     <Button style={btnStyle}>Rules</Button>
                 </Stack>
                 <Divider style={{ borderColor: 'rgb(31, 37, 42)', marginTop: '5px', marginBottom: '5px' }}></Divider>
-                <Typography style={{ fontSize: '27px', textAlign: 'left', marginTop: '10px', fontFamily: '"Jersey 10", sans serif', color: 'rgb(162,173,190)', marginLeft: '30px' }}>
+                <Typography style={{ WebkitTextStroke: '0.5px rgb(162,173,190)', letterSpacing: '2px', fontSize: '25px', textAlign: 'left', marginTop: '10px', fontFamily: '"Jersey 10", sans serif', color: 'rgb(162,173,190)', marginLeft: '30px' }}>
                     Overview
                 </Typography>
                 <Stack direction={"row"} style={stackStyle}>
@@ -95,7 +97,7 @@ export default function LeftSidePanel() {
                     <Button style={btnStyle}>Inventory</Button>
                 </Stack>
                 <Divider style={{ borderColor: 'rgb(31, 37, 42)', marginTop: '5px', marginBottom: '5px' }}></Divider>
-                <Typography style={{ fontSize: '27px', textAlign: 'left', marginTop: '10px', fontFamily: '"Jersey 10", sans serif', color: 'rgb(162,173,190)', marginLeft: '30px' }}>
+                <Typography style={{ WebkitTextStroke: '0.7px rgb(162,173,190)', letterSpacing: '2px', fontSize: '25px', textAlign: 'left', marginTop: '10px', fontFamily: '"Jersey 10", sans serif', color: 'rgb(162,173,190)', marginLeft: '30px' }}>
                     The rest
                 </Typography>
                 <Stack direction={"row"} style={stackStyle}>

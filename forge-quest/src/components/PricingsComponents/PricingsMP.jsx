@@ -15,26 +15,27 @@ const boxStyle = {
 }
 
 const pStyle = {
-    fontFamily: '"Jersey 10", sans serif',
-    fontSize: 50,
+    fontSize: 40,
     margin: 0,
     marginTop: 20,
     color: 'azure',
-    textAlign: 'center'
+    textAlign: 'center',
+    fontWeight: '650'
 }
 
 const btnStyle = {
     color: 'azure',
     fontSize: '20px',
     border: '1px solid white',
-    margin: 20
+    margin: 20,
+    fontWeight: '600'
 }
 
 export default function PricingsMP() {
     return (
         <>
             <Stack direction={"column"} sx={{ maxWidth: 1200, margin: "auto", paddingLeft: '250px' }}>
-                <p style={{ fontFamily: '"Jersey 10", sans serif', fontSize: 80, margin: 0, marginTop: 30, color: "azure", textAlign: "center" }}>
+                <p style={{ fontFamily: '"Jersey 10", sans serif', letterSpacing: '3px', WebkitTextStroke: '1px', fontSize: 80, margin: 0, marginTop: 30, color: "azure", textAlign: "center" }}>
                     Support us with your donations :D
                 </p>
                 <div style={{ width: '100%', marginTop: '35px' }}>
@@ -91,7 +92,7 @@ export default function PricingsMP() {
                         </Stack>
                     </Stack>
                 </div>
-                <p style={{ fontFamily: '"Jersey 10", sans serif', fontSize: 30, margin: '0px', marginTop: 30, color: "azure", textAlign: "center" }}>
+                <p style={{ fontSize: 20, margin: '0px', marginTop: 30, fontWeight: '600' , color: "azure", textAlign: "center" }}>
                     From $1000 you become member of our team as a sponsor and you will playe key role in development
                 </p>
             </Stack>
