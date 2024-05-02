@@ -10,6 +10,11 @@ import Gold from './pages/Gold';
 import Diamond from './pages/Diamond';
 import Bedrock from './pages/Bedrock';
 import Contacts from './pages/Contacts';
+import Support from './pages/Support';
+import FAQ from './pages/FAQ';
+import Rules from './pages/Rules';
+import Profile from './pages/Profile';
+import Friends from './pages/Friends';
 
 ReactDOM.render(
     <Router>
@@ -21,6 +26,11 @@ ReactDOM.render(
         <Route path="/pricings/diamond" element={<Diamond />} />
         <Route path="/pricings/bedrock" element={<Bedrock />} />
         <Route path="/contacts" element={<Contacts />} />
+        <Route path="/support" element={<Support />} />
+        <Route path="/faq" element={<FAQ />} />
+        <Route path="/rules" element={<Rules />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/friends" element={<Friends />} />
       </Routes>
     </Router>,
     document.getElementById('root')

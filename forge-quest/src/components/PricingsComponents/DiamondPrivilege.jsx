@@ -20,7 +20,7 @@ const textStyle = {
 export default function DiamondPrivilege() {
     return (
         <>
-            <Stack direction={"column"} sx={{ maxWidth: 1200, margin: "auto", paddingLeft: '250px' }}>
+            <Stack direction={"column"} sx={{ maxWidth: 1200, margin: "auto" }}>
                 <p style={{ fontFamily: '"Jersey 10", sans serif', letterSpacing: '3px', WebkitTextStroke: '1px azure', fontSize: 80, margin: 0, marginTop: 25, marginBottom: 20, color: "azure", textAlign: "center" }}>
                     Diamond plan priviliges:
                 </p>

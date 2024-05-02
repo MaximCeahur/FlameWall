@@ -70,15 +70,15 @@ export default function LeftSidePanel() {
                 </Stack>
                 <Stack direction={"row"} style={stackStyle}>
                     <SupportAgentIcon style={iconStyle} />
-                    <Button style={btnStyle}>Support</Button>
+                    <Button style={btnStyle} href='/support'>Support</Button>
                 </Stack>
                 <Stack direction={"row"} style={stackStyle}>
                     <HelpIcon style={iconStyle} />
-                    <Button style={btnStyle}>FAQ</Button>
+                    <Button style={btnStyle} href='/faq'>FAQ</Button>
                 </Stack>
                 <Stack direction={"row"} style={stackStyle}>
                     <RuleIcon style={iconStyle} />
-                    <Button style={btnStyle}>Rules</Button>
+                    <Button style={btnStyle} href='/rules'>Rules</Button>
                 </Stack>
                 <Divider style={{ borderColor: 'rgb(31, 37, 42)', marginTop: '5px', marginBottom: '5px' }}></Divider>
                 <Typography style={{ WebkitTextStroke: '0.5px rgb(162,173,190)', letterSpacing: '2px', fontSize: '25px', textAlign: 'left', marginTop: '10px', fontFamily: '"Jersey 10", sans serif', color: 'rgb(162,173,190)', marginLeft: '30px' }}>
@@ -86,11 +86,11 @@ export default function LeftSidePanel() {
                 </Typography>
                 <Stack direction={"row"} style={stackStyle}>
                     <PersonIcon style={iconStyle} />
-                    <Button style={btnStyle}>Profile</Button>
+                    <Button style={btnStyle} href='/profile'>Profile</Button>
                 </Stack>
                 <Stack direction={"row"} style={stackStyle}>
                     <GroupIcon style={iconStyle} />
-                    <Button style={btnStyle}>Friends</Button>
+                    <Button style={btnStyle} href='/friends'>Friends</Button>
                 </Stack>
                 <Stack direction={"row"} style={stackStyle}>
                     <InventoryIcon style={iconStyle} />

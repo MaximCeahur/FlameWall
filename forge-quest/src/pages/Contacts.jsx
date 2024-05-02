@@ -11,10 +11,12 @@ export default function Contacts() {
         <Stack direction="row" style={{ justifyContent: 'space-between' }}>
             <LeftSidePanel />
             <div className="vertical-divider"></div>
-            <Box className="main-box" style={{ width: '100%' }}>
+            <Box className="main-box" style={{ width: '100%', padding: '0px'}}>
                 <NavBar />
                 <div className='line'></div>
-                <ContactsMP />
+                <div style={{ paddingLeft: '266px', margin: 'auto', paddingRight: '16px' }}>
+                    <ContactsMP />
+                </div>
             </Box>
         </Stack>
     )

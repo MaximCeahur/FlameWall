@@ -1,13 +1,12 @@
 import React from "react";
-import MainPage from "../components/LandingComponents/MainPage";
 import NavBar from "../components/LayoutComponents/NavBar";
-import Description from "../components/LandingComponents/Description";
 import LeftSidePanel from "../components/LayoutComponents/LeftSidePanel";
 import { Stack, Box } from "@mui/material";
+import SupportMP from "../components/SupportComponents/SupportMP";
 
 
 
-export default function Landing() {
+export default function Support() {
     return (
         <Stack direction="row" style={{ justifyContent: 'space-between' }}>
             <LeftSidePanel />
@@ -16,8 +15,7 @@ export default function Landing() {
                 <NavBar />
                 <div className='line'></div>
                 <div style={{ paddingLeft: '266px', maxWidth: '1200px', margin: 'auto', paddingRight: '16px' }}>
-                    <MainPage />
-                    <Description />
+                    <SupportMP />
                 </div>
             </Box>
         </Stack>

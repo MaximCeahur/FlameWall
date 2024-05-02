@@ -11,10 +11,12 @@ export default function Diamond() {
         <Stack direction="row" style={{ justifyContent: 'space-between' }}>
             <LeftSidePanel />
             <div className="vertical-divider"></div>
-            <Box className="main-box" style={{ width: '100%' }}>
+            <Box className="main-box" style={{ width: '100%', padding: '0px'}}>
                 <NavBar />
                 <div className='line'></div>
-                <DiamondPrivilege />
+                <div style={{ paddingLeft: '266px', maxWidth: '1200px', margin: 'auto', paddingRight: '16px' }}>
+                    <DiamondPrivilege />
+                </div>
             </Box>
         </Stack>
     )

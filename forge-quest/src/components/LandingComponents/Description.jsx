@@ -13,7 +13,7 @@ const pStyle = {
 export default function Description() {
     return (
         <>
-            <Stack sx={{ maxWidth: 1200, margin: "auto", paddingLeft: '250px', color: "azure", marginBottom: "150px" }}>
+            <Stack sx={{ color: "azure", marginBottom: "150px" }}>
                 <Typography style={{ fontFamily: '"Jersey 10", sans serif', fontSize: 100, margin: 0, color: "azure", textAlign: "center", WebkitTextStroke: '1px azure', letterSpacing: '4px'  }}>
                     What is this?
                 </Typography>
@@ -29,7 +29,7 @@ export default function Description() {
                     <img src={Hello} style={{ width: '300px', height: '100%' }}></img>
                 </Stack>
             </Stack>
-            <Stack sx={{ maxWidth: 1200, margin: "auto", paddingLeft: '250px', color: "azure", marginBottom: "150px" }}>
+            <Stack sx={{ maxWidth: 1200, margin: "auto", color: "azure", marginBottom: "150px" }}>
                 <Typography style={{ fontFamily: '"Jersey 10", sans serif', fontSize: 100, margin: 0, color: "azure", textAlign: "center", WebkitTextStroke: '1px azure', letterSpacing: '4px'  }}>
                     Why us?
                 </Typography>
@@ -45,7 +45,7 @@ export default function Description() {
                     </Stack>
                 </Stack>
             </Stack>
-            <Stack sx={{ maxWidth: 1200, margin: "auto", paddingLeft: '250px', color: "azure", marginBottom: "150px" }}>
+            <Stack sx={{ maxWidth: 1200, margin: "auto", color: "azure", marginBottom: "150px" }}>
                 <Typography style={{ fontFamily: '"Jersey 10", sans serif', fontSize: 100, margin: 0, color: "azure", textAlign: "center", WebkitTextStroke: '2px azure', letterSpacing: '4px' }}>
                     Mini-games
                 </Typography>
@@ -61,7 +61,7 @@ export default function Description() {
                     <img src={Fight} style={{ width: '500px', height: '100%' }}></img>
                 </Stack>
             </Stack>
-            <Stack sx={{ maxWidth: 1200, margin: "auto", paddingLeft: '250px', color: "azure", marginBottom: "150px" }}>
+            <Stack sx={{ maxWidth: 1200, margin: "auto", color: "azure", marginBottom: "150px" }}>
                 <Typography style={{ fontFamily: '"Jersey 10", sans serif', fontSize: 100, margin: 0, color: "azure", textAlign: "center", WebkitTextStroke: '2px azure', letterSpacing: '4px' }}>
                     Building
                 </Typography>
@@ -77,7 +77,7 @@ export default function Description() {
                     </Stack>
                 </Stack>
             </Stack>
-            <Stack sx={{ maxWidth: 1200, margin: "auto", paddingLeft: '250px', color: "azure", marginBottom: "80px", }}>
+            <Stack sx={{ maxWidth: 1200, margin: "auto", color: "azure", marginBottom: "80px", }}>
                 <Typography style={{ fontFamily: '"Jersey 25", sans serif', fontSize: 100, margin: 0, marginBottom: '30px', color: "azure", textAlign: "center", WebkitTextStroke: '1px azure', letterSpacing: '4px' }}>
                     Survival
                 </Typography>

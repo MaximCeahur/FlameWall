@@ -20,7 +20,7 @@ const textStyle = {
 export default function BedrockPrivilege() {
     return (
         <>
-            <Stack direction={"column"} sx={{ maxWidth: 1200, margin: "auto", paddingLeft: '250px' }}>
+            <Stack direction={"column"} sx={{ maxWidth: 1200, margin: "auto" }}>
                 <p style={{ fontFamily: '"Jersey 10", sans-serif', fontWeight: '400', fontSize: 80, letterSpacing: '3px', WebkitTextStroke: '1px azure', margin: 0, marginTop: 40, marginBottom: 40, color: "azure", textAlign: "center" }}>
                     Bedrock plan priviliges:
                 </p>

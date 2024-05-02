@@ -6,15 +6,17 @@ import GoldPrivilege from "../components/PricingsComponents/GoldPrivilege";
 
 
 
-export default function Gold() {
+export default function Landing() {
     return (
         <Stack direction="row" style={{ justifyContent: 'space-between' }}>
             <LeftSidePanel />
             <div className="vertical-divider"></div>
-            <Box className="main-box" style={{ width: '100%' }}>
+            <Box className="main-box" style={{ width: '100%', padding: '0px'}}>
                 <NavBar />
                 <div className='line'></div>
-                <GoldPrivilege />
+                <div style={{ paddingLeft: '266px', maxWidth: '1200px', margin: 'auto', paddingRight: '16px' }}>
+                    <GoldPrivilege />
+                </div>
             </Box>
         </Stack>
     )

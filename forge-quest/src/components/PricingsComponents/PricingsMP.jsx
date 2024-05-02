@@ -34,7 +34,7 @@ const btnStyle = {
 export default function PricingsMP() {
     return (
         <>
-            <Stack direction={"column"} sx={{ maxWidth: 1200, margin: "auto", paddingLeft: '250px' }}>
+            <Stack direction={"column"} sx={{ maxWidth: 1200, margin: "auto" }}>
                 <p style={{ fontFamily: '"Jersey 10", sans serif', letterSpacing: '3px', WebkitTextStroke: '1px', fontSize: 80, margin: 0, marginTop: 30, color: "azure", textAlign: "center" }}>
                     Support us with your donations :D
                 </p>

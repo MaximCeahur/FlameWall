@@ -33,12 +33,12 @@ const btnStyle = {
     fontWeight: '600'
 }
 
-export default function ContactsMP() {
+export default function FriendsMP() {
     return (
         <>
             <Stack direction={"column"} sx={{ margin: "auto", gap: '30px' }}>
                 <p style={{ fontFamily: '"Jersey 10", sans serif', letterSpacing: '3px', WebkitTextStroke: '1px', fontSize: 80, margin: 0, marginTop: 30, color: "azure", textAlign: "center" }}>
-                    Contact with us!
+                    Your friends are here!
                 </p>
                 <div style={{ textAlign: 'center', display: 'flex', justifyContent: 'center' }}>
                     <Grid container rowSpacing={4} columnSpacing={2} justifyContent={"center"} columns={4}>

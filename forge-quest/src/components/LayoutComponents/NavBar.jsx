@@ -12,9 +12,9 @@ const textStyle = {
 
 export default function NavBar() {
     return (
-        <AppBar position="static" sx={{ backgroundColor: 'rgb(16,20,24)', paddingLeft: '250px' }}
+        <AppBar position= 'static' sx={{ backgroundColor: 'rgb(16,20,24)', padding: '0px', paddingLeft: '250px' }}
             style={{ height: 70, justifyContent: 'center' }}>
-            <Toolbar sx={{ display: 'flex', textAlign: 'center', gap: '50px', justifyContent: 'space-between' }} style={{ paddingLeft: 36, paddingRight: 36 }}>
+            <Toolbar sx={{ display: 'flex', textAlign: 'center', gap: '50px', justifyContent: 'space-between' }}>
                 <Box>
                     <Paper
                         component="form"
