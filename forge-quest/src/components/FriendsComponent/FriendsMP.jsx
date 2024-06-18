@@ -5,7 +5,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
-import Avatar from '../img/Male_Avatar.jpg'
+import Avatar from '../img/pfp.jpg'
 
 
 const boxStyle = {
@@ -37,10 +37,10 @@ export default function FriendsMP() {
     return (
         <>
             <Stack direction={"column"} sx={{ margin: "auto", gap: '30px' }}>
-                <p style={{ fontFamily: '"Jersey 10", sans serif', letterSpacing: '3px', WebkitTextStroke: '1px', fontSize: 80, margin: 0, marginTop: 30, color: "azure", textAlign: "center" }}>
+                <p style={{ fontFamily: '"Pixel", sans serif', letterSpacing: '3px', WebkitTextStroke: '1px', fontSize: 80, margin: 0, marginTop: 30, color: "azure", textAlign: "center" }}>
                     Your friends are here!
                 </p>
-                <div style={{ textAlign: 'center', display: 'flex', justifyContent: 'center' }}>
+                <div style={{ textAlign: 'center', display: 'flex', justifyContent: 'center', marginBottom: '20px' }}>
                     <Grid container rowSpacing={4} columnSpacing={2} justifyContent={"center"} columns={4}>
                         <Grid item>
                             <Card sx={{ maxWidth: 250, backgroundColor: 'rgb(30,30,30)', border: '1px solid rgb(57,69,87)' }}>

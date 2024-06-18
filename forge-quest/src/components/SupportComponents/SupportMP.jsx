@@ -65,7 +65,7 @@ export default function SupportMP() {
     return (
         <>
             <Stack direction={"column"} sx={{ maxWidth: 1200, margin: "auto", gap: '30px' }}>
-                <p style={{ fontFamily: '"Jersey 10", sans serif', letterSpacing: '3px', WebkitTextStroke: '1px', fontSize: 80, margin: 0, marginTop: 30, color: "azure", textAlign: "center" }}>
+                <p style={{ fontFamily: '"Pixel", sans serif', fontSize: 80, margin: 0, marginTop: 30, color: "azure", textAlign: "center" }}>
                     Don't be shy to write here!
                 </p>
                 <ThemeProvider theme={theme}>

@@ -12,7 +12,7 @@ const textStyle = {
 
 export default function NavBar() {
     return (
-        <AppBar position= 'static' sx={{ backgroundColor: 'rgb(16,20,24)', padding: '0px', paddingLeft: '250px' }}
+        <AppBar position= 'static' sx={{ backgroundColor: 'rgb(16,20,24)', padding: '0px', paddingLeft: '270px' }}
             style={{ height: 70, justifyContent: 'center' }}>
             <Toolbar sx={{ display: 'flex', textAlign: 'center', gap: '50px', justifyContent: 'space-between' }}>
                 <Box>

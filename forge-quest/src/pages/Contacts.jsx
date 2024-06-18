@@ -14,7 +14,7 @@ export default function Contacts() {
             <Box className="main-box" style={{ width: '100%', padding: '0px'}}>
                 <NavBar />
                 <div className='line'></div>
-                <div style={{ paddingLeft: '266px', margin: 'auto', paddingRight: '16px' }}>
+                <div className="main-page">
                     <ContactsMP />
                 </div>
             </Box>

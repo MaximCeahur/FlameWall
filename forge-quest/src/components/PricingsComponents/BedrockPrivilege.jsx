@@ -5,23 +5,20 @@ import AddIcon from '@mui/icons-material/Add';
 
 const textStyle = {
     color: 'azure',
-    fontWeight: '1',
-    letterSpacing: '2px',
-    fontSize: '40px',
+    fontSize: '45px',
     width: '1000px',
     margin: 'auto',
     alignItems: 'center',
     gap: '20px',
-    marginBottom: '20px',
-    fontFamily: '"Jersey 10", sans-serif',
-    WebkitTextStroke: '0.5px azure'
+    marginBottom: "20px",
+    fontFamily: '"Pixel", sans-serif',
 }
 
 export default function BedrockPrivilege() {
     return (
         <>
             <Stack direction={"column"} sx={{ maxWidth: 1200, margin: "auto" }}>
-                <p style={{ fontFamily: '"Jersey 10", sans-serif', fontWeight: '400', fontSize: 80, letterSpacing: '3px', WebkitTextStroke: '1px azure', margin: 0, marginTop: 40, marginBottom: 40, color: "azure", textAlign: "center" }}>
+                <p style={{ fontFamily: '"Pixel", sans-serif', fontWeight: '400', fontSize: 80, margin: 0, marginTop: 40, marginBottom: 40, color: "azure", textAlign: "center" }}>
                     Bedrock plan priviliges:
                 </p>
                 <Stack direction={"row"} style={textStyle}>

@@ -5,42 +5,19 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
-import Avatar from '../img/Male_Avatar.jpg'
+import Avatar from '../img/pfp.jpg'
 
 
-const boxStyle = {
-    width: '250px',
-    height: '400px',
-    borderRadius: '30px',
-    backgroundColor: 'rgb(16, 20, 24)',
-    border: '1px solid azure',
-}
 
-const pStyle = {
-    fontSize: 40,
-    margin: 0,
-    marginTop: 20,
-    color: 'azure',
-    textAlign: 'center',
-    fontWeight: '650'
-}
-
-const btnStyle = {
-    color: 'azure',
-    fontSize: '20px',
-    border: '1px solid white',
-    margin: 20,
-    fontWeight: '600'
-}
 
 export default function ContactsMP() {
     return (
         <>
             <Stack direction={"column"} sx={{ margin: "auto", gap: '30px' }}>
-                <p style={{ fontFamily: '"Jersey 10", sans serif', letterSpacing: '3px', WebkitTextStroke: '1px', fontSize: 80, margin: 0, marginTop: 30, color: "azure", textAlign: "center" }}>
+                <p style={{ fontFamily: '"Pixel", sans serif', letterSpacing: '3px', WebkitTextStroke: '1px', fontSize: 80, margin: 0, marginTop: 30, color: "azure", textAlign: "center" }}>
                     Contact with us!
                 </p>
-                <div style={{ textAlign: 'center', display: 'flex', justifyContent: 'center' }}>
+                <div style={{ textAlign: 'center', display: 'flex', justifyContent: 'center', marginBottom: '20px' }}>
                     <Grid container rowSpacing={4} columnSpacing={2} justifyContent={"center"} columns={4}>
                         <Grid item>
                             <Card sx={{ maxWidth: 250, backgroundColor: 'rgb(30,30,30)', border: '1px solid rgb(57,69,87)' }}>

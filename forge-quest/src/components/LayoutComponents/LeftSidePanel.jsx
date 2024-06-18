@@ -16,11 +16,11 @@ import RuleIcon from '@mui/icons-material/Rule';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import SettingsIcon from '@mui/icons-material/Settings';
 import DiamondIcon from '@mui/icons-material/Diamond';
-import Logo from '../img/logo.png';
+import DescriptionIcon from '@mui/icons-material/Description';
 
 const textStyle = {
     color: 'azure',
-    fontFamily: '"Jersey 10", sans serif'
+    fontFamily: '"Pixel", sans serif'
 };
 
 const iconStyle = {
@@ -32,36 +32,36 @@ const stackStyle = {
     gap: 10,
     alignContent: 'center',
     alignItems: 'center',
-    marginLeft: 20,
-    marginRight: 20,
+    maxWidth: 230,
+    marginLeft: 10,
+    marginRight: 10,
     marginTop: 5
 }
 
 const btnStyle = {
-    marginTop: '3px',
-    marginBottom: '3px',
-    fontSize: 30,
+    marginTop: '5px',
+    marginBottom: '5px',
+    fontSize: 35,
     fontWeight: 100,
+    height: '40px',
+    lineHeight: "normal",
     color: 'rgb(162,173,190)',
     textTransform: 'none',
     letterSpacing: '1px',
-    height: '40px',
-    fontFamily: '"Jersey 10", sans-serif',
-    WebkitTextStroke: '0.5px rgb(162,173,190)'
+    fontFamily: '"Pixel", sans-serif',
 }
 
 export default function LeftSidePanel() {
     return (
-        <div className='side-bar' style={{ minWidth: '250px', position: 'fixed', backgroundColor: 'rgb(16, 20, 24)', borderRight: '1px solid rgb(31, 37, 42)' }}>
+        <div className='side-bar' style={{ padding: '5px', maxWidth: '260px', minWidth: '260px', position: 'fixed', backgroundColor: 'rgb(16, 20, 24)', borderRight: '1px solid rgb(31, 37, 42)' }}>
             <Stack>
                 <Stack direction={'row'} sx={{ display: 'flex', alignItems: 'center', height: '70px', justifyContent: 'center', gap: '12px', WebkitTextStroke: '0.7px rgb(162,173,190)', letterSpacing: '2px' }}>
-                {/* <img src={Logo} style={{ width: '48px', height: '35px' }}></img> */}
-                    <Link href="/" style={textStyle} sx={{ textDecoration: 'none', fontSize: 43 }}>
-                        CrownPeak
+                    <Link href="/" style={textStyle} sx={{ textDecoration: 'none', fontSize: 50 }}>
+                        Xenithra
                     </Link>
                 </Stack>
                 <Divider style={{ borderColor: 'rgb(31, 37, 42)', marginBottom: '5px' }}></Divider>
-                <Typography style={{ WebkitTextStroke: '0.5px rgb(162,173,190)', letterSpacing: '2px', fontSize: '25px', textAlign: 'left', marginTop: '10px', fontFamily: '"Jersey 10", sans serif', color: 'rgb(162,173,190)', marginLeft: '30px' }}>
+                <Typography style={{ fontSize: '30px', textAlign: 'left', marginTop: '10px', fontFamily: '"Pixel", sans serif', color: 'rgb(162,173,190)', marginLeft: '30px' }}>
                     Help
                 </Typography>
                 <Stack direction={"row"} style={stackStyle}>
@@ -81,7 +81,7 @@ export default function LeftSidePanel() {
                     <Button style={btnStyle} href='/rules'>Rules</Button>
                 </Stack>
                 <Divider style={{ borderColor: 'rgb(31, 37, 42)', marginTop: '5px', marginBottom: '5px' }}></Divider>
-                <Typography style={{ WebkitTextStroke: '0.5px rgb(162,173,190)', letterSpacing: '2px', fontSize: '25px', textAlign: 'left', marginTop: '10px', fontFamily: '"Jersey 10", sans serif', color: 'rgb(162,173,190)', marginLeft: '30px' }}>
+                <Typography style={{ fontSize: '30px', textAlign: 'left', marginTop: '10px', fontFamily: '"Pixel", sans serif', color: 'rgb(162,173,190)', marginLeft: '30px' }}>
                     Overview
                 </Typography>
                 <Stack direction={"row"} style={stackStyle}>
@@ -96,8 +96,12 @@ export default function LeftSidePanel() {
                     <InventoryIcon style={iconStyle} />
                     <Button style={btnStyle}>Inventory</Button>
                 </Stack>
+                <Stack direction={"row"} style={stackStyle}>
+                    <DescriptionIcon style={iconStyle} />
+                    <Button style={btnStyle}>Description</Button>
+                </Stack>
                 <Divider style={{ borderColor: 'rgb(31, 37, 42)', marginTop: '5px', marginBottom: '5px' }}></Divider>
-                <Typography style={{ WebkitTextStroke: '0.7px rgb(162,173,190)', letterSpacing: '2px', fontSize: '25px', textAlign: 'left', marginTop: '10px', fontFamily: '"Jersey 10", sans serif', color: 'rgb(162,173,190)', marginLeft: '30px' }}>
+                <Typography style={{ fontSize: '30px', textAlign: 'left', marginTop: '10px', fontFamily: '"Pixel", sans serif', color: 'rgb(162,173,190)', marginLeft: '30px' }}>
                     The rest
                 </Typography>
                 <Stack direction={"row"} style={stackStyle}>
@@ -106,11 +110,11 @@ export default function LeftSidePanel() {
                 </Stack>
                 <Stack direction={"row"} style={stackStyle}>
                     <Mail style={iconStyle} />
-                    <Button style={btnStyle}>Mail / News</Button>
+                    <Button style={btnStyle}>Mail</Button>
                 </Stack>
                 <Stack direction={"row"} style={stackStyle}>
                     <AttachMoneyIcon style={iconStyle} />
-                    <Button style={btnStyle} href='/pricings'>Pricings</Button>
+                    <Button style={btnStyle} href='/pricings'> Buy rank</Button>
                 </Stack>
                 <Stack direction={"row"} style={stackStyle}>
                     <SettingsIcon style={iconStyle} />

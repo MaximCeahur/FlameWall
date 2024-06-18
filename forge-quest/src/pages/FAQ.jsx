@@ -15,7 +15,7 @@ export default function FAQ() {
             <Box className="main-box" style={{ width: '100%', padding: '0px'}}>
                 <NavBar />
                 <div className='line'></div>
-                <div style={{ paddingLeft: '266px', maxWidth: '1200px', margin: 'auto', paddingRight: '16px' }}>
+                <div className="main-page">
                     <FAQMP />
                 </div>
             </Box>

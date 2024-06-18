@@ -4,23 +4,19 @@ import CheckIcon from '@mui/icons-material/Check';
 
 const textStyle = {
     color: 'azure',
-    fontWeight: '1',
-    letterSpacing: '2px',
-    fontSize: '40px',
+    fontSize: '45px',
     width: '1000px',
     margin: 'auto',
     alignItems: 'center',
     gap: '20px',
-    marginBottom: '10px',
-    fontFamily: '"Jersey 10", sans-serif',
-    WebkitTextStroke: '0.5px azure'
+    fontFamily: '"Pixel", sans-serif',
 }
 
 export default function SilverPrivilege() {
     return (
         <>
             <Stack direction={"column"} sx={{ maxWidth: 1200, margin: "auto" }}>
-                <p style={{ fontFamily: '"Jersey 10", sans serif', fontSize: 80, margin: 0, letterSpacing: '3px', WebkitTextStroke: '1px azure', marginTop: 30, marginBottom: 30, color: "azure", textAlign: "center" }}>
+                <p style={{ fontFamily: '"Pixel", sans serif', fontSize: 80, margin: 0, marginTop: 30, marginBottom: 30, color: "azure", textAlign: "center" }}>
                     Silver plan priviliges:
                 </p>
                 <Stack direction={"row"} style={{ width: '1000px', margin: 'auto', alignItems: 'center', gap: '20px', marginBottom: '20px' }}>

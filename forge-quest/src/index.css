@@ -77,3 +77,15 @@ html {
 
 
 }
+
+.main-page {
+  padding-left: 286px;
+  max-width: 1200px;
+  margin: auto;
+  padding-right: 16px;
+}
+
+@font-face {
+  font-family: "Pixel";
+  src: local("habeshapixels"), url("./fonts/nihonium113.regular.ttf") format("truetype");
+}
