@@ -38,7 +38,7 @@ export default function PricingsMP() {
         <>
             <Stack direction={"column"} sx={{ maxWidth: 1200, margin: "auto" }}>
                 <p style={{ fontFamily: '"Pixel", sans serif', fontSize: 80, margin: 0, marginTop: 30, color: "azure", textAlign: "center" }}>
-                    Support us with your donations :D
+                    Support us with bying a rank :D
                 </p>
                 <div style={{ width: '100%', marginTop: '35px' }}>
                     <Stack direction={"row"} justifyContent={"space-around"} gap={"10px"}>

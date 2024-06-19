@@ -15,6 +15,7 @@ import FAQ from './pages/FAQ';
 import Rules from './pages/Rules';
 import Profile from './pages/Profile';
 import Friends from './pages/Friends';
+import Description from './pages/Description';
 
 ReactDOM.render(
     <Router>
@@ -31,6 +32,7 @@ ReactDOM.render(
         <Route path="/rules" element={<Rules />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/friends" element={<Friends />} />
+        <Route path="/description" element={<Description />} />
       </Routes>
     </Router>,
     document.getElementById('root')

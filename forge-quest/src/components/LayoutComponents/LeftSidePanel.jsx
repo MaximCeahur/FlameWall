@@ -74,7 +74,7 @@ export default function LeftSidePanel() {
                 </Stack>
                 <Stack direction={"row"} style={stackStyle}>
                     <HelpIcon style={iconStyle} />
-                    <Button style={btnStyle} href='/faq'>FAQ</Button>
+                    <Button style={btnStyle} href='/faq'>Questions</Button>
                 </Stack>
                 <Stack direction={"row"} style={stackStyle}>
                     <RuleIcon style={iconStyle} />
@@ -98,7 +98,7 @@ export default function LeftSidePanel() {
                 </Stack>
                 <Stack direction={"row"} style={stackStyle}>
                     <DescriptionIcon style={iconStyle} />
-                    <Button style={btnStyle}>Description</Button>
+                    <Button style={btnStyle} href='/description'>Description</Button>
                 </Stack>
                 <Divider style={{ borderColor: 'rgb(31, 37, 42)', marginTop: '5px', marginBottom: '5px' }}></Divider>
                 <Typography style={{ fontSize: '30px', textAlign: 'left', marginTop: '10px', fontFamily: '"Pixel", sans serif', color: 'rgb(162,173,190)', marginLeft: '30px' }}>
