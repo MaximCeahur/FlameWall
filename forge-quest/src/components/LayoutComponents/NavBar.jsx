@@ -35,12 +35,12 @@ export default function NavBar() {
                 </div>
                 <Box style={{ gap: 25 }} sx={{ display: 'flex', alignItems: 'center' }}>
                     <Box>
-                        <Link href="#" style={textStyle} sx={{ textDecoration: 'none' }}>
+                        <Link href="/signin" style={textStyle} sx={{ textDecoration: 'none' }}>
                             Login
                         </Link>
                     </Box>
                     <Box sx={{ border: '1px solid azure', borderRadius: '5px', p: '5px' }}>
-                        <Link href="#" style={textStyle} sx={{ textDecoration: 'none' }}>
+                        <Link href="/signup" style={textStyle} sx={{ textDecoration: 'none' }}>
                             Register
                         </Link>
                     </Box>

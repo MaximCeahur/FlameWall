@@ -93,10 +93,6 @@ export default function LeftSidePanel() {
                     <Button style={btnStyle} href='/friends'>Friends</Button>
                 </Stack>
                 <Stack direction={"row"} style={stackStyle}>
-                    <InventoryIcon style={iconStyle} />
-                    <Button style={btnStyle}>Inventory</Button>
-                </Stack>
-                <Stack direction={"row"} style={stackStyle}>
                     <DescriptionIcon style={iconStyle} />
                     <Button style={btnStyle} href='/description'>Description</Button>
                 </Stack>
@@ -106,23 +102,19 @@ export default function LeftSidePanel() {
                 </Typography>
                 <Stack direction={"row"} style={stackStyle}>
                     <LocalGroceryStoreIcon style={iconStyle} />
-                    <Button style={btnStyle}>Store</Button>
+                    <Button style={btnStyle} href='/store'>Store</Button>
                 </Stack>
                 <Stack direction={"row"} style={stackStyle}>
                     <Mail style={iconStyle} />
-                    <Button style={btnStyle}>Mail</Button>
+                    <Button style={btnStyle} href='/mail'>Mail</Button>
                 </Stack>
                 <Stack direction={"row"} style={stackStyle}>
                     <AttachMoneyIcon style={iconStyle} />
                     <Button style={btnStyle} href='/pricings'> Buy rank</Button>
                 </Stack>
-                <Stack direction={"row"} style={stackStyle}>
+                <Stack direction={"row"} style={stackStyle} marginBottom={"10px"}>
                     <SettingsIcon style={iconStyle} />
-                    <Button style={btnStyle}>Settings</Button>
-                </Stack>
-                <Stack direction={"row"} style={stackStyle} sx={{ marginBottom: "10px" }}>
-                    <DiamondIcon style={iconStyle} />
-                    <Button style={btnStyle}>Hall of Fame</Button>
+                    <Button style={btnStyle} href='/settings'>Settings</Button>
                 </Stack>
             </Stack>
         </div>

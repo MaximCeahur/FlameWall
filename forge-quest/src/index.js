@@ -16,6 +16,12 @@ import Rules from './pages/Rules';
 import Profile from './pages/Profile';
 import Friends from './pages/Friends';
 import Description from './pages/Description';
+import Store from './pages/Store';
+import Settings from './pages/Settings';
+import SignUp from './pages/SignUp';
+import SignIn from './pages/SignIn';
+import Mail from './pages/Mail';
+
 
 ReactDOM.render(
     <Router>
@@ -33,6 +39,11 @@ ReactDOM.render(
         <Route path="/profile" element={<Profile />} />
         <Route path="/friends" element={<Friends />} />
         <Route path="/description" element={<Description />} />
+        <Route path="/store" element={<Store />} />
+        <Route path="/settings" element={<Settings />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/signin" element={<SignIn />} />
+        <Route path="/mail" element={<Mail />} />
       </Routes>
     </Router>,
     document.getElementById('root')
