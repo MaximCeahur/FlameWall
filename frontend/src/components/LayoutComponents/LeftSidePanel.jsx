@@ -57,7 +57,7 @@ export default function LeftSidePanel() {
             <Stack>
                 <Stack direction={'row'} sx={{ display: 'flex', alignItems: 'center', height: '70px', justifyContent: 'center', gap: '12px', WebkitTextStroke: '0.7px rgb(162,173,190)', letterSpacing: '2px' }}>
                     <Link href="/" style={textStyle} sx={{ textDecoration: 'none', fontSize: 50 }}>
-                        Xenithra
+                        FlameWall
                     </Link>
                 </Stack>
                 <Divider style={{ borderColor: 'rgb(31, 37, 42)', marginBottom: '5px' }}></Divider>
@@ -106,7 +106,7 @@ export default function LeftSidePanel() {
                 </Stack>
                 <Stack direction={"row"} style={stackStyle}>
                     <Mail style={iconStyle} />
-                    <Button style={btnStyle} href='/mail'>Mail</Button>
+                    <Button style={btnStyle} href='/mail'>News</Button>
                 </Stack>
                 <Stack direction={"row"} style={stackStyle}>
                     <AttachMoneyIcon style={iconStyle} />

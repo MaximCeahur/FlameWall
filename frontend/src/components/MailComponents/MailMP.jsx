@@ -9,7 +9,7 @@ import Button from '@mui/material/Button';
 export default function MailMP() {
     return (
         <div style={{ display: 'flex', flexDirection: 'column', gap: '5px', marginTop: '50px' }}>
-            <Accordion style={{ backgroundColor: 'rgb(30, 30, 30)', color: 'azure' }} >
+            <Accordion style={{ backgroundColor: 'rgb(20,24,27)', color: 'azure' }} >
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon style={{ color: 'azure' }} />}
                     aria-controls="panel1-content"
@@ -17,12 +17,12 @@ export default function MailMP() {
                 >
                     Clan System Update
                 </AccordionSummary>
-                <AccordionDetails style={{ backgroundColor: 'rgb(30, 30, 30)', color: 'azure' }}>
+                <AccordionDetails style={{ backgroundColor: 'rgb(20,24,27)', color: 'azure' }}>
                     We've made significant changes to the clan system to make your in-game interactions
                     even more exciting. Gain levels, develop your clan and compete for championship with other teams!
                 </AccordionDetails>
             </Accordion>
-            <Accordion style={{ backgroundColor: 'rgb(30, 30, 30)', color: 'azure' }} >
+            <Accordion style={{ backgroundColor: 'rgb(20,24,27)', color: 'azure' }} >
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon style={{ color: 'azure' }} />}
                     aria-controls="panel1-content"
@@ -30,7 +30,7 @@ export default function MailMP() {
                 >
                     Meet the "Demon Hunters" event
                 </AccordionSummary>
-                <AccordionDetails style={{ backgroundColor: 'rgb(30, 30, 30)', color: 'azure' }}>
+                <AccordionDetails style={{ backgroundColor: 'rgb(20,24,27)', color: 'azure' }}>
                     We are pleased to present a new addition to our RPG component of the server! Meet
                     the Demon Hunters, a new character class capable of summoning powerful spells and
                     fighting the dark forces that threaten our world. Dive into new quests, explore
@@ -38,7 +38,7 @@ export default function MailMP() {
                     you'll ever encounter in our new dungeons!
                 </AccordionDetails>
             </Accordion>
-            <Accordion style={{ backgroundColor: 'rgb(30, 30, 30)', color: 'azure' }} >
+            <Accordion style={{ backgroundColor: 'rgb(20,24,27)', color: 'azure' }} >
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon style={{ color: 'azure' }} />}
                     aria-controls="panel1-content"
@@ -46,7 +46,7 @@ export default function MailMP() {
                 >
                     The First Mini-game Update
                 </AccordionSummary>
-                <AccordionDetails style={{ backgroundColor: 'rgb(30, 30, 30)', color: 'azure' }}>
+                <AccordionDetails style={{ backgroundColor: 'rgb(20,24,27)', color: 'azure' }}>
                     Dear players! We're proud to announce a major update to our mini-game server that will change
                     the way you experience virtual entertainment. In this update, we have introduced some new exciting
                     games that will allow you to experience the real feeling of competition and fun.

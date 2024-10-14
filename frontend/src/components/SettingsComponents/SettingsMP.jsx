@@ -64,10 +64,6 @@ export default function SettingsMP() {
                 <Switch sx={switchStyles} color="default" />
                 <p style={pStyle}>Disable tournament announcements in chat </p>
                 </Stack>
-                <Stack direction={"row"} style={StackStyle}>
-                <Switch sx={switchStyles} color="default" />
-                <p style={pStyle}>Turn off the ad</p>
-                </Stack>
             </Stack>
         </>
     )

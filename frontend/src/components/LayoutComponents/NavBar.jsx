@@ -1,12 +1,18 @@
 import React from 'react';
 
-import { AppBar, Toolbar, Box, Link } from '@mui/material';
+import { AppBar, Toolbar, Box, Link, linearProgressClasses } from '@mui/material';
 import Paper from '@mui/material/Paper';
 import InputBase from '@mui/material/InputBase';
 import IconButton from '@mui/material/IconButton';
 import SearchIcon from '@mui/icons-material/Search';
+import MicrosoftIcon from '../img/Microsoft.png'
+import Stack from '@mui/material/Stack';
+import { fontGrid } from '@mui/material/styles/cssUtils';
 
 const textStyle = {
+    lineHeight: '50px',
+    fontSize: '25px',
+    fontFamily: '"Pixel", sans serif',
     color: 'white',
 };
 
@@ -34,16 +40,14 @@ export default function NavBar() {
                     Type <span style={{ color: 'green' }}> /site </span> in the server chat to get link to this page
                 </div>
                 <Box style={{ gap: 25 }} sx={{ display: 'flex', alignItems: 'center' }}>
-                    <Box>
-                        <Link href="/signin" style={textStyle} sx={{ textDecoration: 'none' }}>
-                            Login
+                    <Stack direction="row">
+                        <Link href="/signin" style={textStyle} sx={{ textDecoration: 'none', marginRight: "20px" }}>
+                            Sign in
                         </Link>
-                    </Box>
-                    <Box sx={{ border: '1px solid azure', borderRadius: '5px', p: '5px' }}>
                         <Link href="/signup" style={textStyle} sx={{ textDecoration: 'none' }}>
-                            Register
+                            Sign up
                         </Link>
-                    </Box>
+                    </Stack>
                 </Box>
             </Toolbar>
         </AppBar>

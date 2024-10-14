@@ -65,18 +65,12 @@ export default function SupportMP() {
     return (
         <>
             <Stack direction={"column"} sx={{ maxWidth: 400, margin: "auto", gap: '30px', alignContent: 'center' }}>
-                <p style={{ fontFamily: '"Pixel", sans serif', fontSize: 80, margin: 0, marginTop: 60, color: "azure", textAlign: "center" }}>
-                    Sign Up
+                <p style={{ fontFamily: '"Pixel", sans serif', fontSize: 80, margin: 0, marginTop: 90, color: "azure", textAlign: "center" }}>
+                    Sign In
                 </p>
                 <ThemeProvider theme={theme}>
                     <TextField
-                        label="Your Minecraft nickname"
-                        variant="outlined"
-                    />
-                </ThemeProvider>
-                <ThemeProvider theme={theme}>
-                    <TextField
-                        label="Email"
+                        label="Username"
                         variant="outlined"
                     />
                 </ThemeProvider>
@@ -87,7 +81,7 @@ export default function SupportMP() {
                     />
                 </ThemeProvider>
                 <Button variant="contained" color="success">
-                    Register an account
+                    Log in
                 </Button>
             </Stack>
         </>
