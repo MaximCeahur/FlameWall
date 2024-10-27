@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { AppBar, Toolbar, Box, Link, linearProgressClasses } from '@mui/material';
+import { AppBar, Toolbar, Box, Link, linearProgressClasses, Button } from '@mui/material';
 import Paper from '@mui/material/Paper';
 import InputBase from '@mui/material/InputBase';
 import IconButton from '@mui/material/IconButton';
@@ -10,17 +10,17 @@ import Stack from '@mui/material/Stack';
 import { fontGrid } from '@mui/material/styles/cssUtils';
 
 const textStyle = {
-    lineHeight: '50px',
+    lineHeight: '25px',
     fontSize: '25px',
     fontFamily: '"Pixel", sans serif',
-    color: 'white',
+    color: 'azure',
 };
 
 export default function NavBar() {
     return (
-        <AppBar position= 'static' sx={{ backgroundColor: 'rgb(16,20,24)', padding: '0px', paddingLeft: '270px' }}
+        <AppBar position='static' sx={{ backgroundColor: 'rgb(16,20,24)', padding: '0px', paddingLeft: '270px', boxShadow: 'none' }}
             style={{ height: 70, justifyContent: 'center' }}>
-            <Toolbar sx={{ display: 'flex', textAlign: 'center', gap: '50px', justifyContent: 'space-between' }}>
+            <Toolbar sx={{ display: 'flex', textAlign: 'center', gap: '50px', justifyContent: 'space-between', height: '70px', marginTop: '5px' }}>
                 <Box>
                     <Paper
                         component="form"
@@ -40,13 +40,27 @@ export default function NavBar() {
                     Type <span style={{ color: 'green' }}> /site </span> in the server chat to get link to this page
                 </div>
                 <Box style={{ gap: 25 }} sx={{ display: 'flex', alignItems: 'center' }}>
-                    <Stack direction="row">
+                    <Stack direction="row" alignItems={'center'}>
                         <Link href="/signin" style={textStyle} sx={{ textDecoration: 'none', marginRight: "20px" }}>
                             Sign in
                         </Link>
-                        <Link href="/signup" style={textStyle} sx={{ textDecoration: 'none' }}>
-                            Sign up
-                        </Link>
+                        <Button style={{
+                            backgroundColor: 'azure',
+                            padding: '5px',
+                            textTransform: 'none',
+                            height: '40px'
+                        }}>
+                            <Link href="/signup" sx={{
+                                lineHeight: '25px',
+                                fontSize: '25px',
+                                fontFamily: '"Pixel", sans serif',
+                                color: 'rgb(16, 20, 24)',
+                                textDecoration: 'none',
+                            }}>
+                                Sign up
+                            </Link>
+                        </Button>
+
                     </Stack>
                 </Box>
             </Toolbar>

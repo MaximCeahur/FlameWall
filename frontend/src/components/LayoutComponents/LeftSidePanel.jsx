@@ -53,15 +53,29 @@ const btnStyle = {
 
 export default function LeftSidePanel() {
     return (
-        <div className='side-bar' style={{ padding: '5px', maxWidth: '260px', minWidth: '260px', position: 'fixed', backgroundColor: 'rgb(16, 20, 24)', borderRight: '1px solid rgb(31, 37, 42)' }}>
+        <div className='side-bar' style={{ padding: '5px', paddingLeft: '10px', maxWidth: '260px', minWidth: '260px', position: 'fixed', backgroundColor: 'rgb(16, 20, 24)' }}>
             <Stack>
                 <Stack direction={'row'} sx={{ display: 'flex', alignItems: 'center', height: '70px', justifyContent: 'center', gap: '12px', WebkitTextStroke: '0.7px rgb(162,173,190)', letterSpacing: '2px' }}>
                     <Link href="/" style={textStyle} sx={{ textDecoration: 'none', fontSize: 50 }}>
                         FlameWall
                     </Link>
                 </Stack>
-                <Divider style={{ borderColor: 'rgb(31, 37, 42)', marginBottom: '5px' }}></Divider>
-                <Typography style={{ fontSize: '30px', textAlign: 'left', marginTop: '10px', fontFamily: '"Pixel", sans serif', color: 'rgb(162,173,190)', marginLeft: '30px' }}>
+                <Typography style={{ fontSize: '30px', textAlign: 'left', marginTop: '20px', fontFamily: '"Pixel", sans serif', color: 'rgb(162,173,190)', marginLeft: '30px' }}>
+                    Overview
+                </Typography>
+                <Stack direction={"row"} style={stackStyle}>
+                    <PersonIcon style={iconStyle} />
+                    <Button style={btnStyle} href='/profile'>Profile</Button>
+                </Stack>
+                <Stack direction={"row"} style={stackStyle}>
+                    <GroupIcon style={iconStyle} />
+                    <Button style={btnStyle} href='/friends'>Friends</Button>
+                </Stack>
+                <Stack direction={"row"} style={stackStyle}>
+                    <DescriptionIcon style={iconStyle} />
+                    <Button style={btnStyle} href='/description'>Description</Button>
+                </Stack>
+                <Typography style={{ fontSize: '30px', textAlign: 'left', marginTop: '15px', fontFamily: '"Pixel", sans serif', color: 'rgb(162,173,190)', marginLeft: '30px' }}>
                     Help
                 </Typography>
                 <Stack direction={"row"} style={stackStyle}>
@@ -80,24 +94,7 @@ export default function LeftSidePanel() {
                     <RuleIcon style={iconStyle} />
                     <Button style={btnStyle} href='/rules'>Rules</Button>
                 </Stack>
-                <Divider style={{ borderColor: 'rgb(31, 37, 42)', marginTop: '5px', marginBottom: '5px' }}></Divider>
-                <Typography style={{ fontSize: '30px', textAlign: 'left', marginTop: '10px', fontFamily: '"Pixel", sans serif', color: 'rgb(162,173,190)', marginLeft: '30px' }}>
-                    Overview
-                </Typography>
-                <Stack direction={"row"} style={stackStyle}>
-                    <PersonIcon style={iconStyle} />
-                    <Button style={btnStyle} href='/profile'>Profile</Button>
-                </Stack>
-                <Stack direction={"row"} style={stackStyle}>
-                    <GroupIcon style={iconStyle} />
-                    <Button style={btnStyle} href='/friends'>Friends</Button>
-                </Stack>
-                <Stack direction={"row"} style={stackStyle}>
-                    <DescriptionIcon style={iconStyle} />
-                    <Button style={btnStyle} href='/description'>Description</Button>
-                </Stack>
-                <Divider style={{ borderColor: 'rgb(31, 37, 42)', marginTop: '5px', marginBottom: '5px' }}></Divider>
-                <Typography style={{ fontSize: '30px', textAlign: 'left', marginTop: '10px', fontFamily: '"Pixel", sans serif', color: 'rgb(162,173,190)', marginLeft: '30px' }}>
+                <Typography style={{ fontSize: '30px', textAlign: 'left', marginTop: '15px', fontFamily: '"Pixel", sans serif', color: 'rgb(162,173,190)', marginLeft: '30px' }}>
                     The rest
                 </Typography>
                 <Stack direction={"row"} style={stackStyle}>

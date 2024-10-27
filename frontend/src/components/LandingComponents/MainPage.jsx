@@ -7,7 +7,7 @@ import CrownPeak from '../img/maxresdefault.png';
 export default function MainPage() {
     return (
         <Stack direction={"column"} sx={{ maxWidth: 1200, margin: "auto" }}>
-            <p style={{ fontFamily: '"Pixel", sans serif', WebkitTextStroke: '1px azure', letterSpacing: '1.5px', fontSize: 55, margin: 0, marginTop: 20, color: "azure", textAlign: "center" }}>
+            <p style={{ fontFamily: '"Pixel", sans serif', letterSpacing: '1.5px', fontSize: 55, margin: 0, marginTop: 20, color: "azure", textAlign: "center" }}>
                 Discover new opportunities with our new server
             </p>
             <div className="vertical-divider"></div>

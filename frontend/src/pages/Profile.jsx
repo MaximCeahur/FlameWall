@@ -8,10 +8,8 @@ export default function Profile() {
     return (
         <Stack direction="row" style={{ justifyContent: 'space-between' }}>
             <LeftSidePanel />
-            <div className="vertical-divider"></div>
             <Box className="main-box" style={{ width: '100%', padding: '0px'}}>
                 <NavBar />
-                <div className='line'></div>
                 <div className="main-page">
                     <ProfileMP />
                 </div>

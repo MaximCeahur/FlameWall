@@ -56,11 +56,17 @@ html {
 }
 
 .side-bar {
-  overflow-y: auto; /* Включаем вертикальную прокрутку */
-  overflow-x: hidden; /* Скрываем горизонтальную прокрутку */
+  overflow-y: auto;
+  overflow-x: hidden;
   height: 100vh;
-  scrollbar-width: thin; /* Тонкий пользовательский скроллбар (только для браузеров, поддерживающих свойство scrollbar-width) */
+  scrollbar-width: thin;
+  direction: rtl; /* Меняет направление контейнера */
 }
+
+.side-bar > * {
+  direction: ltr; /* Возвращает обычное направление для содержимого */
+}
+
 
 .main-box {
   padding-left: 15px;
