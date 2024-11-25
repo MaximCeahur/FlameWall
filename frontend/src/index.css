@@ -61,11 +61,11 @@ html {
   overflow-x: hidden;
   height: 100vh;
   scrollbar-width: thin;
-  direction: rtl; /* Меняет направление контейнера */
+  direction: rtl;
 }
 
 .side-bar > * {
-  direction: ltr; /* Возвращает обычное направление для содержимого */
+  direction: ltr;
 }
 
 

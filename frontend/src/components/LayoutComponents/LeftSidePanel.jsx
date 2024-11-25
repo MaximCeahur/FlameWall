@@ -60,7 +60,7 @@ export default function LeftSidePanel() {
                         FlameWall
                     </Link>
                 </Stack>
-                <Typography style={{ fontSize: '30px', textAlign: 'left', marginTop: '20px', fontFamily: '"Pixel", sans serif', color: 'rgb(162,173,190)', marginLeft: '30px' }}>
+                <Typography style={{ fontSize: '30px', textAlign: 'left', marginTop: '20px', fontFamily: '"Pixel", sans serif', color: 'azure', marginLeft: '30px' }}>
                     Overview
                 </Typography>
                 <Stack direction={"row"} style={stackStyle}>
@@ -75,7 +75,7 @@ export default function LeftSidePanel() {
                     <DescriptionIcon style={iconStyle} />
                     <Button style={btnStyle} href='/description'>Description</Button>
                 </Stack>
-                <Typography style={{ fontSize: '30px', textAlign: 'left', marginTop: '15px', fontFamily: '"Pixel", sans serif', color: 'rgb(162,173,190)', marginLeft: '30px' }}>
+                <Typography style={{ fontSize: '30px', textAlign: 'left', marginTop: '15px', fontFamily: '"Pixel", sans serif', color: 'azure', marginLeft: '30px' }}>
                     Help
                 </Typography>
                 <Stack direction={"row"} style={stackStyle}>
@@ -94,7 +94,7 @@ export default function LeftSidePanel() {
                     <RuleIcon style={iconStyle} />
                     <Button style={btnStyle} href='/rules'>Rules</Button>
                 </Stack>
-                <Typography style={{ fontSize: '30px', textAlign: 'left', marginTop: '15px', fontFamily: '"Pixel", sans serif', color: 'rgb(162,173,190)', marginLeft: '30px' }}>
+                <Typography style={{ fontSize: '30px', textAlign: 'left', marginTop: '15px', fontFamily: '"Pixel", sans serif', color: 'azure', marginLeft: '30px' }}>
                     The rest
                 </Typography>
                 <Stack direction={"row"} style={stackStyle}>
