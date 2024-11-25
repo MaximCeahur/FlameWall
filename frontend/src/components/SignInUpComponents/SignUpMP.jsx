@@ -86,7 +86,7 @@ export default function SupportMP() {
                         variant="outlined"
                     />
                 </ThemeProvider>
-                <Button variant="contained" color="success">
+                <Button variant="contained" sx={{ backgroundColor: '#333' }}>
                     Register an account
                 </Button>
             </Stack>

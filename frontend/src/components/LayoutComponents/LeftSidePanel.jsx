@@ -53,7 +53,7 @@ const btnStyle = {
 
 export default function LeftSidePanel() {
     return (
-        <div className='side-bar' style={{ padding: '5px', paddingLeft: '10px', maxWidth: '260px', minWidth: '260px', position: 'fixed', backgroundColor: 'rgb(16, 20, 24)' }}>
+        <div className='side-bar' style={{ padding: '5px', paddingLeft: '10px', maxWidth: '260px', minWidth: '260px', position: 'fixed', backgroundColor: 'rgb(16, 20, 24, 0)' }}>
             <Stack>
                 <Stack direction={'row'} sx={{ display: 'flex', alignItems: 'center', height: '70px', justifyContent: 'center', gap: '12px', WebkitTextStroke: '0.7px rgb(162,173,190)', letterSpacing: '2px' }}>
                     <Link href="/" style={textStyle} sx={{ textDecoration: 'none', fontSize: 50 }}>

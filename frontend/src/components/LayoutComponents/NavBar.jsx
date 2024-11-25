@@ -1,13 +1,13 @@
 import React from 'react';
 
-import { AppBar, Toolbar, Box, Link, linearProgressClasses, Button } from '@mui/material';
-import Paper from '@mui/material/Paper';
-import InputBase from '@mui/material/InputBase';
-import IconButton from '@mui/material/IconButton';
-import SearchIcon from '@mui/icons-material/Search';
-import MicrosoftIcon from '../img/Microsoft.png'
+import { AppBar, Toolbar, Box, Link, Button } from '@mui/material';
+import MenuIcon from '@mui/icons-material/Menu';
 import Stack from '@mui/material/Stack';
-import { fontGrid } from '@mui/material/styles/cssUtils';
+
+import NotificationsIcon from '@mui/icons-material/Notifications';
+import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
+import LightModeIcon from '@mui/icons-material/LightMode';
+import BookmarkIcon from '@mui/icons-material/Bookmark';
 
 const textStyle = {
     lineHeight: '25px',
@@ -18,10 +18,9 @@ const textStyle = {
 
 export default function NavBar() {
     return (
-        <AppBar position='static' sx={{ backgroundColor: 'rgb(16,20,24)', padding: '0px', paddingLeft: '270px', boxShadow: 'none' }}
-            style={{ height: 70, justifyContent: 'center' }}>
+        <AppBar position='static' sx={{ backgroundColor: 'rgb(16,20,24,0)', padding: '0px', paddingLeft: '270px', boxShadow: 'none', justifyContent: 'center' }}>
             <Toolbar sx={{ display: 'flex', textAlign: 'center', gap: '50px', justifyContent: 'space-between', height: '70px', marginTop: '5px' }}>
-                <Box>
+                {/* <Box>
                     <Paper
                         component="form"
                         sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', maxWidth: 400, backgroundColor: 'rgb(16,20,24)', border: '1px solid azure' }}
@@ -35,10 +34,67 @@ export default function NavBar() {
                             <SearchIcon />
                         </IconButton>
                     </Paper>
-                </Box>
-                <div style={{ fontSize: '15px', padding: '10px', border: '1px solid azure', borderRadius: 5 }}>
+                </Box> */}
+                {/* <div style={{ fontSize: '15px', padding: '10px', border: '1px solid azure', borderRadius: 5 }}>
                     Type <span style={{ color: 'green' }}> /site </span> in the server chat to get link to this page
-                </div>
+                </div> */}
+                <Button sx={{
+                    padding: '5px',
+                    textTransform: 'none',
+                    color: 'azure',
+                    minWidth: '50px',
+                    minHeight: '50px'
+                }}>
+                    <MenuIcon sx={{
+                        fontSize: '30px'
+                    }} />
+                </Button>
+                <Box style={{ gap: 15 }} sx={{ display: 'flex', alignItems: 'center' }}>
+                    <Button sx={{
+                        padding: '5px',
+                        textTransform: 'none',
+                        color: 'azure',
+                        minWidth: '50px',
+                        minHeight: '50px'
+                    }}>
+                        <BookmarkIcon sx={{
+                            fontSize: '30px'
+                        }} />
+                    </Button>
+                    <Button sx={{
+                        padding: '5px',
+                        textTransform: 'none',
+                        color: 'azure',
+                        minWidth: '50px',
+                        minHeight: '50px'
+                    }}>
+                        <LightModeIcon sx={{
+                            fontSize: '30px'
+                        }} />
+                    </Button>
+                    <Button sx={{
+                        padding: '5px',
+                        textTransform: 'none',
+                        color: 'azure',
+                        minWidth: '50px',
+                        minHeight: '50px'
+                    }}>
+                        <PhoneAndroidIcon sx={{
+                            fontSize: '30px'
+                        }} />
+                    </Button>
+                    <Button sx={{
+                        padding: '5px',
+                        textTransform: 'none',
+                        color: 'azure',
+                        minWidth: '50px',
+                        minHeight: '50px'
+                    }}>
+                        <NotificationsIcon sx={{
+                            fontSize: '30px'
+                        }} />
+                    </Button>
+                </Box>
                 <Box style={{ gap: 25 }} sx={{ display: 'flex', alignItems: 'center' }}>
                     <Stack direction="row" alignItems={'center'}>
                         <Link href="/signin" style={textStyle} sx={{ textDecoration: 'none', marginRight: "20px" }}>

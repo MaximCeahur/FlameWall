@@ -6,8 +6,8 @@ const StackStyle = {
     width: '1100px',
     height: '80px',
     borderRadius: '5px',
-    backgroundColor: 'rgb(16, 20, 24)',
-    border: '1px solid azure',
+    backgroundColor: 'rgb(23,23,23)',
+    border: '2px solid #444',
     alignItems: 'center',
     paddingLeft: 15,
     gap: 10
@@ -22,9 +22,9 @@ const pStyle = {
 }
 
 const btnStyle = {
-    color: 'azure',
+    color: 'rgb(23,23,23)',
     fontSize: '20px',
-    border: '1px solid white',
+    border: '1px solid #333',
     margin: 20,
     fontWeight: '600'
 }

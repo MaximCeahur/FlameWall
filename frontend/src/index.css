@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(16, 20, 24);
+
   max-width: 100%;
   align-content: center;
   margin: auto !important;
@@ -38,6 +38,7 @@ code {
 /* Изменение цвета фона полосы прокрутки в Firefox */
 html {
   scrollbar-color: #666 #333;
+  background-color: rgb(12, 12, 12);
 }
 
 

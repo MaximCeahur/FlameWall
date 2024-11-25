@@ -80,8 +80,8 @@ export default function SupportMP() {
                         variant="outlined"
                     />
                 </ThemeProvider>
-                <Button variant="contained" color="success">
-                    Log in
+                <Button variant="contained" sx={{ backgroundColor: '#333' }}>
+                    Sign In
                 </Button>
             </Stack>
         </>

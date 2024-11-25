@@ -8,17 +8,17 @@ import BarChartIcon from '@mui/icons-material/BarChart';
 const friendsData = [
     {
         name: "First user",
-        description: "Description 1",
+        Date: "2000.01.01",
         avatar: Avatar,
     },
     {
         name: "Second user",
-        description: "Description 2",
+        Date: "2000.01.01",
         avatar: Avatar,
     },
     {
         name: "Third user",
-        description: "Description 3",
+        Date: "2000.01.01",
         avatar: Avatar,
     },
 ];
@@ -26,7 +26,7 @@ const friendsData = [
 export default function FriendsMP() {
     return (
         <>
-            <Stack direction={"column"} sx={{ margin: "auto", gap: '30px' }}>
+            <Stack direction={"column"} sx={{ margin: "auto", gap: '30px', width: 1100 }}>
                 <p style={{
                     fontFamily: '"Pixel", sans serif', letterSpacing: '3px',
                     WebkitTextStroke: '1px', fontSize: 80, margin: 0, marginTop: 30,
@@ -38,8 +38,8 @@ export default function FriendsMP() {
                     {friendsData.map((friend, index) => (
                         <Stack key={index} direction={"row"} sx={{ gap: "10px" }}>
                             <img src={friend.avatar} style={{ borderRadius: '5px', width: '80px', height: '80px' }} alt={`${friend.name} avatar`} />
-                            <Paper elevation={2} sx={{ padding: "10px", backgroundColor: 'rgb(20,24,27)', height: "60px", width: "100%" }}>
-                                <Stack direction={"row"} sx={{ gap: "15px", alignContent: "center", height: "60px" }}>
+                            <Paper elevation={5} sx={{ padding: "10px", backgroundColor: 'rgb(23,23,23)', height: "60px", width: "100%" }}>
+                                <Stack direction={"row"} sx={{ alignContent: "center", height: "60px", justifyContent: "space-between" }}>
                                     <p style={{
                                         fontFamily: '"Pixel", sans serif', fontSize: "40px", margin: 0,
                                         marginLeft: "10px", alignContent: "center", color: "azure", letterSpacing: "1px"
@@ -47,24 +47,24 @@ export default function FriendsMP() {
                                         {friend.name}
                                     </p>
                                     <p style={{
-                                        fontSize: "15px", margin: 0, marginLeft: "10px",
+                                        fontSize: "18px", margin: 0, marginLeft: "10px", marginRight: "10px",
                                         alignContent: "center", color: 'rgb(162,173,190)', letterSpacing: "1px"
                                     }}>
-                                        {friend.description}
+                                        {friend.Date}
                                     </p>
                                 </Stack>
                             </Paper>
-                            <Paper sx={{ backgroundColor: 'rgb(20,24,27)', borderRadius: 2, width: "auto", height: "80px" }}>
+                            <Paper elevation={5} sx={{ backgroundColor: 'rgb(23,23,23)', borderRadius: 2, width: "auto", height: "80px" }}>
                                 <Button sx={{ width: "50px", height: "100%", padding: 0 }}>
                                     <PersonAddAltIcon sx={{ color: 'rgb(162,173,190)', height: "30px", width: "30px" }} />
                                 </Button>
                             </Paper>
-                            <Paper sx={{ backgroundColor: 'rgb(20,24,27)', borderRadius: 2, width: "auto", height: "80px" }}>
+                            <Paper elevation={5} sx={{ backgroundColor: 'rgb(23,23,23)', borderRadius: 2, width: "auto", height: "80px" }}>
                                 <Button sx={{ width: "50px", height: "100%", padding: 0 }}>
                                     <EmailIcon sx={{ color: 'rgb(162,173,190)', height: "30px", width: "30px" }} />
                                 </Button>
                             </Paper>
-                            <Paper sx={{ backgroundColor: 'rgb(20,24,27)', borderRadius: 2, width: "auto", height: "80px" }}>
+                            <Paper elevation={5} sx={{ backgroundColor: 'rgb(23,23,23)', borderRadius: 2, width: "auto", height: "80px" }}>
                                 <Button sx={{ width: "50px", height: "100%", padding: 0 }}>
                                     <BarChartIcon sx={{ color: 'rgb(162,173,190)', height: "30px", width: "30px" }} />
                                 </Button>

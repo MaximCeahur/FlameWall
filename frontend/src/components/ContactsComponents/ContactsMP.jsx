@@ -38,8 +38,8 @@ export default function ContactsMP() {
                     {contactsData
                 .map((contact, index) => (
                         <Stack key={index} direction={"row"} sx={{ gap: "10px" }}>
-                            <img src={contact.avatar} style={{ borderRadius: '5px', width: '80px', height: '80px' }} alt={`${contact.name} avatar`} />
-                            <Paper elevation={2} sx={{ padding: "10px", backgroundColor: 'rgb(20,24,27)', height: "60px", width: "100%" }}>
+                            <img  src={contact.avatar} style={{ borderRadius: '5px', width: '80px', height: '80px' }} alt={`${contact.name} avatar`} />
+                            <Paper elevation={5} sx={{ padding: "10px", backgroundColor: 'rgb(23,23,23)', height: "60px", width: "100%" }}>
                                 <Stack direction={"row"} sx={{ gap: "15px", alignContent: "center", height: "60px" }}>
                                     <p style={{
                                         fontFamily: '"Pixel", sans serif', fontSize: "40px", margin: 0,
@@ -55,17 +55,17 @@ export default function ContactsMP() {
                                     </p>
                                 </Stack>
                             </Paper>
-                            <Paper sx={{ backgroundColor: 'rgb(20,24,27)', borderRadius: 2, width: "auto", height: "80px" }}>
+                            <Paper elevation={5} sx={{ backgroundColor: 'rgb(23,23,23)', borderRadius: 2, width: "auto", height: "80px" }}>
                                 <Button sx={{ width: "50px", height: "100%", padding: 0 }}>
                                     <PersonAddAltIcon sx={{ color: 'rgb(162,173,190)', height: "30px", width: "30px" }} />
                                 </Button>
                             </Paper>
-                            <Paper sx={{ backgroundColor: 'rgb(20,24,27)', borderRadius: 2, width: "auto", height: "80px" }}>
+                            <Paper elevation={5} sx={{ backgroundColor: 'rgb(23,23,23)', borderRadius: 2, width: "auto", height: "80px" }}>
                                 <Button sx={{ width: "50px", height: "100%", padding: 0 }}>
                                     <EmailIcon sx={{ color: 'rgb(162,173,190)', height: "30px", width: "30px" }} />
                                 </Button>
                             </Paper>
-                            <Paper sx={{ backgroundColor: 'rgb(20,24,27)', borderRadius: 2, width: "auto", height: "80px" }}>
+                            <Paper elevation={5} sx={{ backgroundColor: 'rgb(23,23,23)', borderRadius: 2, width: "auto", height: "80px" }}>
                                 <Button sx={{ width: "50px", height: "100%", padding: 0 }}>
                                     <BarChartIcon sx={{ color: 'rgb(162,173,190)', height: "30px", width: "30px" }} />
                                 </Button>

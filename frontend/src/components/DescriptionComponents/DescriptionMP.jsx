@@ -21,7 +21,7 @@ const pStyle = {
 export default function RulesMP() {
     return (
         <>
-            <Stack direction={"column"} sx={{ maxWidth: 1000, margin: "auto", gap: '10px' }}>
+            <Stack direction={"column"} sx={{ maxWidth: 1000, margin: "auto", gap: '10px', marginBottom: '50px' }}>
                 <p style={{ fontFamily: '"Pixel", sans serif', fontSize: 90, margin: 0, marginTop: 30, color: "azure", textAlign: "center" }}>
                     The full description is here!
                 </p>
@@ -40,7 +40,6 @@ export default function RulesMP() {
                     each server separately. To motivate players to play unpopular games, we have a system of prize pools for the best
                     players. People themselves will start playing where there is less competition in order to get into the top 20
                 </p>
-                <Button style={{ color: "azure" }}>To read more about each mini-game you can click here</Button>
                 <p style={{ fontFamily: '"Pixel", sans serif', fontSize: 90, margin: 0, marginTop: 100, color: "azure", textAlign: "center" }}>
                     Ranks
                 </p>
